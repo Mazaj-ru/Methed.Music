@@ -1,0 +1,8 @@
+.track__artist {
+  display: block;
+  background-color: #FFFFFF;
+  font-style: 300;
+  font-size: 1.4rem;
+  padding: 0 .8rem 1.4rem;
+  border-radius: 0 0 1.2rem 1.2rem;
+}

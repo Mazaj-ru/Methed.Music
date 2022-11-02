@@ -1,0 +1,8 @@
+.header__button {
+  color: #FFFFFF;
+  line-height: 0;
+  transition: color .2s ease-in;
+}
+.header__button:hover {
+  color: tomato;
+}

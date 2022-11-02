@@ -1,2 +1,9 @@
 @import "./__input/__input.css";
 @import "./__button/__button.css";
+
+.search {
+  position: relative;
+  height: 3.6rem;
+  width: 69.2rem;
+  margin-right: 17.4rem;
+}

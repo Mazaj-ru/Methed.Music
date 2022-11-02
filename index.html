@@ -22,7 +22,7 @@
   <header class="header">
     <h1 class="visually-hidden">METHED.MUSIC лучший сервис для воспроизведения музыки</h1>
     <div class="header__wrap">
-      <img src="./blocks/header/img/logo.svg" alt="Логотип METHED.MUSIC" class="header__logo">
+      <img class="header__logo" src="./blocks/header/img/logo.svg" alt="Логотип METHED.MUSIC">
       <form class="search">
         <input type="search" class="search__input">
         <button class="search__button">
@@ -50,7 +50,7 @@
         <span class="track__artist">The weeknd</span>
       </button>
 
-      <button class="catalog__item track">
+      <button class="catalog__item track track--active">
         <img class="track__cover" src="./blocks/track/img/cover-02.png" alt="Imagine Dragons - Follow You">
         <span class="track__title">Follow You</span>
         <span class="track__artist">Imagine Dragons</span>
@@ -114,6 +114,13 @@
         <img class="track__cover" src="./blocks/track/img/cover-12.png" alt="Madonna - Frozen">
         <span class="track__title">Frozen</span>
         <span class="track__artist">Madonna</span>
+      </button>
+
+      <button class="catalog__button">
+        <span>Увидеть всё</span>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z"/>
+        </svg>
       </button>
 
     </div>

@@ -1,0 +1,6 @@
+.header__wrap {
+  margin: 0 auto;
+  max-width: 118rem;
+  display: flex;
+  align-items: center;
+}

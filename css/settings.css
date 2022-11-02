@@ -5,6 +5,7 @@ html {
   font-size: 0.78125vw; /* на разрешении макета 1600px 1000 / 1280 = 0.78125vw равно 10px */
   font-family: "SF UI Display", sans-serif;
   font-style: normal;
+  line-height: 120%;
   font-weight: 500;
   text-rendering: auto;
   margin: 0;
@@ -23,13 +24,22 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  min-width: 64rem;
+  min-height: 100vh;
   height: 100%;
   margin: 0;
   padding: 0;
   background-color: #FFFFFF;
   color: #000000;
   line-height: 1;
+  background: #EEB23D url("./../img/bg.jpg") no-repeat center / cover;
+  background-attachment: fixed;
+  padding-bottom: 17.2rem;
+}
+
+img, svg, picture {
+  width: 100%;
+  height: auto;
 }
 
 a, a:hover {
@@ -46,11 +56,6 @@ input, button {
   border: none;
   outline: none;
   cursor: pointer;
-}
-
-img, svg, picture {
-  width: 100%;
-  height: auto;
 }
 
 button {
@@ -138,6 +143,11 @@ footer {
 .container {
   width: 118rem;
   margin: 0 auto;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
 }
 
 @media (min-width: 20em) and (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */

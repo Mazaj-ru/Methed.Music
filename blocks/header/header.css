@@ -1,3 +1,8 @@
 @import "./__wrap/__wrap.css";
 @import "./__logo/__logo.css";
 @import "./__button/__button.css";
+
+.header {
+  padding-top: 2.4rem;
+  padding-bottom: 2.4rem;
+}
