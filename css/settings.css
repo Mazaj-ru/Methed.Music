@@ -1,0 +1,166 @@
+html {
+  position: relative;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: 0.78125vw; /* на разрешении макета 1600px 1000 / 1280 = 0.78125vw равно 10px */
+  font-family: "SF UI Display", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  text-rendering: auto;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  color: #000000;
+  line-height: 1;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+input, textarea {
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+input, button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+img, svg, picture {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  padding: 0;
+  background-color: inherit;
+  text-rendering: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button, input, a, textarea {
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+button:focus, input:focus, a:focus, textarea:focus {
+  outline: none;
+}
+
+button:active, input:active, a:active, textarea:active {
+  outline: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, figure, fieldset {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+#overlay {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 13rem;;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(44, 52, 73, 0.75);
+}
+
+#overlay.active {
+  display: block;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  width: 118rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 20em) and (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
+  html {
+    font-size: 1.5625vw;  /* font-size: (100/320) * 5vw = 1.5625vw rem нужно умножать на 2; // где 320 это ширина моб версии макета */
+    -webkit-text-size-adjust: none;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
+  html {
+    font-size: 0.651042vw; /* font-size: (100/768) * 5vw = 0.651042vw rem нужно умножать на 2; // где 768 это ширина моб версии макета */
+  }
+}
+
+@media (min-width: 64em) and (max-width: 79.9375em) { /* Ширина экрана минимум 1024px максимум 1279px */
+  html {
+    font-size: 0.9765625vw; /* font-size: (1000/1024) = 0.9765625vw; // где 1024 это ширина макета */
+  }
+}
+
+/* @media (min-widht: 80em) { Ширина экрана минимум 1280px максимум не ограничен*/
+  /* html { */
+/*     font-size: 0.78125vw; font-size: (1000/1280) = 0.78125vw; // где 1280 это ширина макета */
+  /* } */
+/* } */

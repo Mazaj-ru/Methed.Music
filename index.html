@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#1e5a32">
+  <meta name="msapplication-TileColor" content="#1e5a32">
+  <meta name="theme-color" content="#1e5a32">
+
   <title>Methed.Music</title>
 </head>
+
 <body>
-  
+  <header class="header">
+    <h1 class="visually-hidden">METHED.MUSIC лучший сервис для воспроизведения музыки</h1>
+    <div class="header__wrap">
+      <img src="./blocks/header/img/logo.svg" alt="Логотип METHED.MUSIC" class="header__logo">
+      <form class="search">
+        <input type="search" class="search__input">
+        <button class="search__button">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" />
+          </svg>
+        </button>
+      </form>
+      <button class="header__button">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z" />
+        </svg>
+      </button>
+    </div>
+  </header>
+  <section class="catalog">
+    <h2 class="visually-hidden">Список треков</h2>
+    <div class="catalog__wrap">
+
+      <button class="catalog__item track">
+        <img class="track__cover" src="./blocks/track/img/cover-01.png" alt="The weeknd - Save your tears">
+        <span class="track__title">Save your tears</span>
+        <span class="track__artist">The weeknd</span>
+      </button>
+
+      <button class="catalog__item track">
+        <img class="track__cover" src="./blocks/track/img/cover-02.png" alt="Imagine Dragons - Follow You">
+        <span class="track__title">Follow You</span>
+        <span class="track__artist">Imagine Dragons</span>
+      </button>
+
+      <button class="catalog__item track">
+        <img class="track__cover" src="./blocks/track/img/cover-03.png" alt="How Long - Dirt Femme">
+        <span class="track__title">Dirt Femme</span>
+        <span class="track__artist">How Long</span>
+      </button>
+
+      <button class="catalog__item track">
+        <img class="track__cover" src="./blocks/track/img/cover-04.png" alt="Tom Odell - Another Love">
+        <span class="track__title">Another Love</span>
+        <span class="track__artist">Tom Odell</span>
+      </button>
+
+      <button class="catalog__item track">
+        <img class="track__cover" src="./blocks/track/img/cover-05.png" alt="Lana Del Rey - Born to Die">
+        <span class="track__title">Born to Die</span>
+        <span class="track__artist">Lana Del Rey</span>
+      </button>
+
+      <button class="catalog__item track">
+        <img class="track__cover" src="./blocks/track/img/cover-06.png" alt="Adele - Hello">
+        <span class="track__title">Hello</span>
+        <span class="track__artist">Adele</span>
+      </button>
+
+      <button class="catalog__item track">
+        <img class="track__cover" src="./blocks/track/img/cover-07.png" alt="Tom Odell - Can't Pretend">
+        <span class="track__title">Can't Pretend</span>
+        <span class="track__artist">Tom Odell</span>
+      </button>
+
+      <button class="catalog__item track">
+        <img class="track__cover" src="./blocks/track/img/cover-08.png" alt="Lana Del Rey - Young and Beautiful">
+        <span class="track__title">Young and Beautiful</span>
+        <span class="track__artist">Lana Del Rey</span>
+      </button>
+
+      <button class="catalog__item track">
+        <img class="track__cover" src="./blocks/track/img/cover-09.png" alt="Adele - Someone Like You">
+        <span class="track__title">Someone Like You</span>
+        <span class="track__artist">Adele</span>
+      </button>
+
+      <button class="catalog__item track">
+        <img class="track__cover" src="./blocks/track/img/cover-10.png" alt="Imagine Dragons - Natural">
+        <span class="track__title">Natural</span>
+        <span class="track__artist">Imagine Dragons</span>
+      </button>
+
+      <button class="catalog__item track">
+        <img class="track__cover" src="./blocks/track/img/cover-11.png" alt="Drake - laugh now cry later">
+        <span class="track__title">laugh now cry later</span>
+        <span class="track__artist">Drake</span>
+      </button>
+
+      <button class="catalog__item track">
+        <img class="track__cover" src="./blocks/track/img/cover-12.png" alt="Madonna - Frozen">
+        <span class="track__title">Frozen</span>
+        <span class="track__artist">Madonna</span>
+      </button>
+
+    </div>
+  </section>
+
+  <section class="player player--active">
+    <h2 class="visually-hidden">Плеер</h2>
+    <div class="player__wrap">
+      <div class="player-track-info track-info">
+        <p class="track-info__title">Follow You</p>
+        <p class="track-info__artist">Imagine Dragons</p>
+      </div>
+      <div class="player__controller">
+        <button class="player__icon player__icon--stop"></button>
+        <button class="player__icon player__icon--prev"></button>
+        <button class="player__icon player__icon--pause"></button>
+        <button class="player__icon player__icon--next"></button>
+        <button class="player__icon player__icon--like"></button>
+      </div>
+      <div class="player__progress-wrap">
+        <div class="player__progress">
+          <input class="player__progress-input" type="range" min="0" max="100" value="0">
+        </div>
+        <p class="player__time">
+          <span class="player__time-passed">0:24</span>
+          <span>/</span>
+          <span class="player__tiem-total">4:31</span>
+        </p>
+      </div>
+      <div class="player__volume-wrap">
+        <div class="player__volume">
+          <input class="player__volume-input" type="range" min="0" max="100" value="100">
+        </div>
+        <button class="player__icon player__icon--mute"></button>
+      </div>
+    </div>
+  </section>
 </body>
+
 </html>

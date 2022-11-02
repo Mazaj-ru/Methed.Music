@@ -1,0 +1,5 @@
+@import "./header/header.css";
+@import "./search/search.css";
+@import "./catalog/catalog.css";
+@import "./track/track.css";
+@import "./player/player.css";
