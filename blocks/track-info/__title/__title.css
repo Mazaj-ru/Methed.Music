@@ -2,3 +2,15 @@
   font-weight: 600;
   font-size: 1.6rem;
 }
+
+@media (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
+  .track-info__title {
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
+  .track-info__title {
+    font-size: 3.2rem;
+  }
+}

@@ -3,3 +3,9 @@
   align-items: center;
   gap: 1rem;
 }
+
+@media (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
+  .player__volume-wrap {
+    gap: 2rem;
+  }
+}

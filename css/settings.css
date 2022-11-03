@@ -37,6 +37,18 @@ body {
   padding-bottom: 17.2rem;
 }
 
+@media (min-width: 48em) and (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
+  body {
+    padding-bottom: 43.4rem;
+  }
+}
+
+@media (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
+  body {
+    padding-bottom: 37.4rem;
+  }
+}
+
 img, svg, picture {
   width: 100%;
   height: auto;
@@ -150,7 +162,7 @@ footer {
   transform: scale(0);
 }
 
-@media (min-width: 20em) and (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
+@media (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
   html {
     font-size: 1.5625vw;  /* font-size: (100/320) * 5vw = 1.5625vw rem нужно умножать на 2; // где 320 это ширина моб версии макета */
     -webkit-text-size-adjust: none;

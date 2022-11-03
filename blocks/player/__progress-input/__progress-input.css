@@ -32,3 +32,65 @@
 .player__progress-input:focus::-webkit-slider-thumb {
   border: .2rem solid #4E4E4E;
 }
+
+@media (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
+  .player__progress-input {
+    padding: 1.8rem 0;
+  }
+
+  .player__progress-input::-webkit-slider-runnable-track {
+    background-color: #1E5A32;
+    border: none;
+    border-radius: 4rem;
+    height: 1.2rem;
+  }
+
+  .player__progress-input::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    margin-top: -1.8rem;
+    width: 2.4rem;
+    height: 4.8rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 .4rem rgba(0, 0, 0, 0.25);
+    border-radius: 6rem;
+    border: .4rem solid transparent;
+    transition: border .2s ease-in;
+  }
+
+  .player__progress-input:hover::-webkit-slider-thumb,
+  .player__progress-input:focus::-webkit-slider-thumb {
+    border: .4rem solid #4E4E4E;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
+  .player__progress-input {
+    padding: 1.8rem 0;
+  }
+
+  .player__progress-input::-webkit-slider-runnable-track {
+    background-color: #1E5A32;
+    border: none;
+    border-radius: 4rem;
+    height: 1.2rem;
+  }
+
+  .player__progress-input::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    margin-top: -1.8rem;
+    width: 2.4rem;
+    height: 4.8rem;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 .4rem rgba(0, 0, 0, 0.25);
+    border-radius: 6rem;
+    border: .4rem solid transparent;
+    transition: border .2s ease-in;
+  }
+
+  .player__progress-input:hover::-webkit-slider-thumb,
+  .player__progress-input:focus::-webkit-slider-thumb {
+    border: .4rem solid #4E4E4E;
+  }
+}

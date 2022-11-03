@@ -7,3 +7,27 @@
   width: 69.2rem;
   margin-right: 17.4rem;
 }
+
+@media (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
+  .search {
+    order: 1;
+    width: 58rem;
+    height: 7.2rem;
+    margin-right: unset;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
+  .search {
+    width: 60rem;
+    height: 7.2rem;
+    margin-right: 5rem;
+  }
+}
+
+@media (min-width: 64em) and (max-width: 79.9375em) { /* Ширина экрана минимум 1024px максимум 1279px */
+  .search {
+    width: 55.3rem;
+    margin-right: 11.5rem;
+  }
+}

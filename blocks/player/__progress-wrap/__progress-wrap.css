@@ -4,3 +4,17 @@
   gap: 1.6rem;
   padding-right: .9rem;
 }
+
+@media (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
+  .player__progress-wrap {
+    gap: 1.4rem;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
+  .player__progress-wrap {
+    order: 1;
+    grid-column: 1 / span 3
+  }
+}

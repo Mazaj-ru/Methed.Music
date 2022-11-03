@@ -11,3 +11,21 @@
 .search__input::-webkit-search-cancel-button {
   display: none;
 }
+
+@media (min-width: 48em) and (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
+  .search__input {
+    border-radius: 4rem;
+    padding-left: 3.2rem;
+    padding-right: 9.2rem;
+    font-size: 2.8rem;
+  }
+}
+
+@media (min-width: 64em) and (max-width: 79.9375em) { /* Ширина экрана минимум 1024px максимум 1279px */
+  .search__input {
+    border-radius: 2rem;
+    padding-left: 1.6rem;
+    padding-right: 4.6rem;
+    font-size: 1.4rem;
+  }
+}

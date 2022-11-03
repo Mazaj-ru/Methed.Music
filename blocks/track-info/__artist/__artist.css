@@ -2,3 +2,10 @@
   font-weight: 300;
   font-size: 1.4rem;
 }
+
+@media (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
+  .track-info__artist {
+    font-weight: 300;
+    font-size: 2.4rem;
+  }
+}

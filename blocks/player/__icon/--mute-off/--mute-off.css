@@ -1,6 +1,5 @@
 .player__icon--mute-off {
-  background-image: url('./../../img/mute-off.svg');
-  background-size: contain;
+  border: .2rem solid transparent;
 }
 
 .player__icon--mute-off:hover,
@@ -9,4 +8,22 @@
   color: #343434;
   border: .2rem solid #343434;
   border-radius: .5rem;
+}
+
+@media (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
+  .player__icon--mute-off:hover,
+  .player__icon--mute-off:active,
+  .player__icon--mute-off:focus {
+    border: .4rem solid #343434;
+    border-radius: 1rem;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
+  .player__icon--mute-off:hover,
+  .player__icon--mute-off:active,
+  .player__icon--mute-off:focus {
+    border: .4rem solid #343434;
+    border-radius: 1rem;
+  }
 }

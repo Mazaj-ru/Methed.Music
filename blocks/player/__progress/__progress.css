@@ -2,3 +2,21 @@
   flex-grow: 1;
   width: 48.7rem;
 }
+
+@media (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
+  .player__progress {
+    width: 45.4rem;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
+  .player__progress {
+    width: 99.6rem;
+  }
+}
+
+@media (min-width: 64em) and (max-width: 79.9375em) { /* Ширина экрана минимум 1024px максимум 1279px */
+  .player__progress {
+    width: 29.3rem;
+  }
+}

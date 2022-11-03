@@ -7,3 +7,15 @@
 .header__button:hover {
   color: tomato;
 }
+
+@media (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
+  .header__button {
+    width: 4.8rem;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
+  .header__button {
+    width: 4.8rem;
+  }
+}

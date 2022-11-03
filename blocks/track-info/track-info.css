@@ -6,3 +6,18 @@
   flex-direction: column;
   gap: .6rem;
 }
+
+@media (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
+  .track-info {
+    gap: .8rem;
+    align-items: center;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
+  .track-info {
+    width: 36rem;
+    gap: 1.2rem;
+  }
+  
+}

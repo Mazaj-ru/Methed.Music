@@ -1,6 +1,27 @@
 .header__wrap {
   margin: 0 auto;
-  max-width: 118rem;
+  width: 118rem;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
+  .header__wrap {
+    width: 58rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 3.4rem;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
+  .header__wrap {
+    width: 116rem;
+  }
+}
+
+@media (min-width: 64em) and (max-width: 79.9375em) { /* Ширина экрана минимум 1024px максимум 1279px */
+  .header__wrap {
+    width: 98rem;
+  }
 }
