@@ -44,6 +44,19 @@
   background: rgba(255, 255, 255, 0.8) url("./img/pause.svg") no-repeat center;
 }
 
+.track--active.track--active-pause::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  top: 9.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.8) url("./img/play.svg") no-repeat center;
+}
+
 .track:hover.track::after {
   transform: translateX(-50%) rotateY(0);
 

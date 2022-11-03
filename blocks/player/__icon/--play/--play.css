@@ -1,4 +1,5 @@
 .player__icon--play {
+  background-image: url('./../../img/play.svg');
   border: .2rem solid transparent;
 }
 

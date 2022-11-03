@@ -1,4 +1,5 @@
 .player__icon--pause {
+  background-image: url('./../../img/pause.svg');
   border: .2rem solid transparent;
 }
 
