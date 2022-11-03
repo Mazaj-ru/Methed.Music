@@ -1,0 +1,6 @@
+.player__progress-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding-right: .9rem;
+}

@@ -1,0 +1,8 @@
+@import "./__title/__title.css";
+@import "./__artist/__artist.css";
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+}

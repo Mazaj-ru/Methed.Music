@@ -1,0 +1,5 @@
+.player__volume {
+  background: url('./../img/volume.svg') no-repeat center / contain;
+  width: 14.6rem;
+  height: 2.4rem;
+}

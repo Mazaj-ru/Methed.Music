@@ -2,6 +2,7 @@
   color: #FFFFFF;
   line-height: 0;
   transition: color .2s ease-in;
+  width: 2.4rem;
 }
 .header__button:hover {
   color: tomato;

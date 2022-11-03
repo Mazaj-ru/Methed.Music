@@ -1,9 +1,11 @@
 @import "./__controller/__controller.css";
 @import "./__icon/__icon.css";
 @import "./__icon/--like/--like.css";
-@import "./__icon/--mute/--mute.css";
+@import "./__icon/--mute-on/--mute-on.css";
+@import "./__icon/--mute-off/--mute-off.css";
 @import "./__icon/--next/--next.css";
 @import "./__icon/--pause/--pause.css";
+@import "./__icon/--play/--play.css";
 @import "./__icon/--prev/--prev.css";
 @import "./__icon/--stop/--stop.css";
 @import "./__progress/__progress.css";
@@ -16,3 +18,21 @@
 @import "./__volume-input/__volume-input.css";
 @import "./__volume-wrap/__volume-wrap.css";
 @import "./__wrap/__wrap.css";
+
+.player {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: -100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(.6rem);
+  border-radius: 2rem;
+  width: 122.8rem;
+  margin: 0 auto;
+  transition: bottom .5s ease-in;
+  padding: 2.4rem;
+}
+
+.player--active {
+  bottom: 2.6rem;
+}

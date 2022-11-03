@@ -7,4 +7,15 @@
   gap: 0.8rem;
   font-weight: 600;
   font-size: 1.6rem;
+  width: 12.6rem;
+  border: .2rem solid transparent;
+  transition: border .2s ease-in;
+}
+
+.catalog__button:hover,
+.catalog__button:active,
+.catalog__button:focus {
+  color: rgba(255, 255, 255, 0.7);
+  border: .2rem solid rgba(255, 255, 255, 0.7);
+  border-radius: .5rem;
 }

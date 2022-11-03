@@ -1,0 +1,9 @@
+.player__icon {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: color .2s ease-in, border .2s ease-in;
+  border-radius: .5rem;
+}

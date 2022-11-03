@@ -1,0 +1,11 @@
+.player__icon--stop {
+  border: .2rem solid transparent;
+}
+
+.player__icon--stop:hover,
+.player__icon--stop:active,
+.player__icon--stop:focus {
+  color: #343434;
+  border: .2rem solid #343434;
+  border-radius: .5rem;
+}

@@ -1,0 +1,11 @@
+.player__icon--next {
+  border: .2rem solid transparent;
+}
+
+.player__icon--next:hover,
+.player__icon--next:active,
+.player__icon--next:focus {
+  color: #343434;
+  border: .2rem solid #343434;
+  border-radius: .5rem;
+}

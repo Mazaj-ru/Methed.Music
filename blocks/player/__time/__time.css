@@ -1,0 +1,5 @@
+.player__time {
+  font-size: 1.4rem;
+  display: flex;
+  gap: .4rem;
+}

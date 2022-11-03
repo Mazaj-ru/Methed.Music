@@ -1,0 +1,11 @@
+.player__icon--like {
+  border: .2rem solid transparent;
+}
+
+.player__icon--like:hover,
+.player__icon--like:active,
+.player__icon--like:focus {
+  color: #343434;
+  border: .2rem solid #343434;
+  border-radius: .5rem;
+}

@@ -1,0 +1,12 @@
+.player__icon--play {
+  background-image: url('./../../img/play.svg');
+  background-size: contain;
+}
+
+.player__icon--mute-play:hover,
+.player__icon--mute-play:active,
+.player__icon--mute-play:focus {
+  color: #343434;
+  border: .2rem solid #343434;
+  border-radius: .5rem;
+}

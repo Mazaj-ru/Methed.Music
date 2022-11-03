@@ -1,0 +1,11 @@
+.player__icon--mute-on {
+  border: .2rem solid transparent;
+}
+
+.player__icon--mute-on:hover,
+.player__icon--mute-on:active,
+.player__icon--mute-on:focus {
+  color: #343434;
+  border: .2rem solid #343434;
+  border-radius: .5rem;
+}
