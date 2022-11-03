@@ -9,6 +9,7 @@
   font-size: 1.6rem;
   width: 12.6rem;
   border: .2rem solid transparent;
+  border-radius: .5rem;
   transition: border .2s ease-in;
 }
 
