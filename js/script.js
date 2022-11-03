@@ -50,6 +50,8 @@ pauseBtn.addEventListener('click', () => {
 stopBtn.addEventListener('click', () => {
   player.classList.remove('player--active');
   audio.src = '';
-
+  for (let i = 0; i < tracksCard.length; i++) {
+    tracksCard[i].classList.remove('track--active');
+  }
   //! скрыть player и удалить из src трек
 });
