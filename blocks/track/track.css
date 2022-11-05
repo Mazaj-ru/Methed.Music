@@ -57,6 +57,19 @@
   background: rgba(255, 255, 255, 0.8) url("./img/play.svg") no-repeat center;
 }
 
+.track--pause.track--active-pause::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 3.6rem;
+  height: 3.6rem;
+  border-radius: 50%;
+  top: 9.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.8) url("./img/pause.svg") no-repeat center;
+}
+
 .track:hover.track::after {
   transform: translateX(-50%) rotateY(0);
 
@@ -116,6 +129,43 @@
     transform: translateX(-50%);
     background: rgba(255, 255, 255, 0.8) url("./img/pause.svg") no-repeat center;
   }
+
+  .track--pause.track--active-pause::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 50%;
+    top: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8) url("./img/pause.svg") no-repeat center;
+  }
+  .track--active.track--active-pause::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 50%;
+    top: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8) url("./img/play.svg") no-repeat center;
+  }
+  .track--active::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 50%;
+    top: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8) url("./img/pause.svg") no-repeat center;
+  }
 }
 
 @media (min-width: 48em) and (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
@@ -124,5 +174,41 @@
     border: .4rem solid transparent;
     border-radius: 2.4rem;
     transition: border-color .2s ease-in, background-color .2s ease-in;
+  }
+  .track--pause.track--active-pause::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 50%;
+    top: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8) url("./img/pause.svg") no-repeat center;
+  }
+  .track--active::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 50%;
+    top: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8) url("./img/pause.svg") no-repeat center;
+  }
+  .track--active.track--active-pause::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 50%;
+    top: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.8) url("./img/play.svg") no-repeat center;
   }
 }

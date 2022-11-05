@@ -90,15 +90,31 @@ const tracksCard = document.getElementsByClassName('track');
 const player = document.querySelector('.player')
 const pauseBtn = document.querySelector('.player__controller-pause');
 const stopBtn = document.querySelector('.player__controller-stop');
-const content = document.querySelector('#tool', ':after');
 const catalogContainer = document.querySelector('.catalog__wrap');
 
+
+const pausePlayer = () => {
+  const trackActive = document.querySelector('.track--active');
+
+  if(audio.paused) {
+    audio.play();
+    pauseBtn.classList.remove('player__icon--play');
+    trackActive.classList.remove('track--active-pause');
+  } else {
+    audio.pause();
+    pauseBtn.classList.add('player__icon--play');
+    trackActive.classList.add('track--active-pause');
+  }
+}
 
 const playMusic = (event) => {
   event.preventDefault();
   const trackActive = event.currentTarget;
 
-
+if (trackActive.classList.contains('track--active')) {
+  pausePlayer(trackActive);
+  return
+}
 
   const id = trackActive.dataset.idTrack;
   const track = dataMusic.find(item => id === item.id);
@@ -120,27 +136,7 @@ const addHandlerTrack = () => {
   }
 }
 
-pauseBtn.addEventListener('click', () => {
-  playMusic("audio/Madonna - Frozen.mp3");
-});
-
-pauseBtn.addEventListener('click', () => {
-  if(audio.paused) {
-    audio.play();
-    pauseBtn.classList.remove('player__icon--play');
-    
-    for (let i = 0; i < tracksCard.length; i++) {
-      tracksCard[i].classList.remove('track--active-pause');
-    }
-  } else {
-    audio.pause();
-    pauseBtn.classList.add('player__icon--play');
-
-    for (let i = 0; i < tracksCard.length; i++) {
-      tracksCard[i].classList.add('track--active-pause');
-    }
-  }
-});
+pauseBtn.addEventListener('click', pausePlayer);
 
 stopBtn.addEventListener('click', () => {
   player.classList.remove('player--active');
@@ -171,8 +167,18 @@ const renderCatalog = (dataList) => {
   addHandlerTrack();
 }
 
+const checkCoutn = (i = 1) => {
+  tracksCard[0];
+  if (catalogContainer.clientHeight > tracksCard[0].clientHeight * 3) {
+    tracksCard[tracksCard.length - i].style.display = 'none';
+    checkCoutn(i + 1);
+  }
+  
+}
+
 const init = () => {
   renderCatalog(dataMusic);
+  checkCoutn();
 };
 
 init();
