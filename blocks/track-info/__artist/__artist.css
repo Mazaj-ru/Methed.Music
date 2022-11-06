@@ -9,3 +9,10 @@
     font-size: 2.4rem;
   }
 }
+
+@media (min-width: 48em) and (max-width: 63.9375em) { /* Ширина экрана от 768px до 1023px */
+  .track-info__artist {
+    font-weight: 300;
+    font-size: 2.4rem;
+  }
+}

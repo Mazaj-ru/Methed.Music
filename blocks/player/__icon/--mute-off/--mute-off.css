@@ -1,4 +1,5 @@
 .player__icon--mute-off {
+  background-image: url('./../../img/mute-off.svg');
   border: .2rem solid transparent;
 }
 

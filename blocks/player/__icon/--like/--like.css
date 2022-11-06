@@ -10,6 +10,10 @@
   border-radius: .5rem;
 }
 
+.player__icon--like-active {
+  filter: drop-shadow(0 0 .2rem tomato);
+}
+
 @media (max-width: 47.9375em) { /* Ширина экрана от 320px до 767px */
   .player__icon--like:hover,
   .player__icon--like:active,

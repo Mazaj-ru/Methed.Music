@@ -1,3 +1,16 @@
 .track__cover {
   display: block;
+  border-radius: 1.2rem 1.2rem 0 0;
+}
+
+@media (max-width: 47.9375em) {
+  .track__cover {
+      border-radius:2.4rem 2.4rem 0 0 ;
+  }
+}
+
+@media (min-width: 48em) and (max-width: 63.9375em) {
+  .track__cover {
+      border-radius:2.4rem 2.4rem 0 0 ;
+  }
 }
